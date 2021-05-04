@@ -2,6 +2,7 @@
 ## Overview of Project:
 This project is meant to offer a mean to mine data regarding UFO sightings and display them in a specific layout:
 - Date, City, State, Country, Shape, Duration, and Comments.
+
 Users, when interacting with the application, would enter their search requirements and submit their requests. The application must filter the raw data and present the results onto the main page.
 The data set of UFO sightings had been provided to us.
 
