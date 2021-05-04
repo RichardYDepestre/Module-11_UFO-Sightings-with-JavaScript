@@ -78,10 +78,13 @@ function filterTable() {
 
 //#region event listener
 // 2. Attach an event to listen for changes to each filter
-d3.selectAll(".btn").on("click", handleClick);
-function handleClick() {
+d3.selectAll(".datetime_value").on("onkeypress", handleClick());
+function handleClick(e) {
   // set text values from each filter
-  updateFilters();
+  if (e.keyCode === 13) {
+    e.preventDefault(); // Ensure it is only this code that runs
+    updateFilters();
+  }
 }
 //#endregion
 
