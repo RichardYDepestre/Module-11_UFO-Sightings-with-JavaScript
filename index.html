@@ -63,41 +63,31 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-3">
-      <form>
+      <form action="#">
         <p>Filter Search</p>
         <ul>
           <label for="date">Enter Date </label>
-          <input type="text" placeholder="01/10/2020" id="datetime_value" />
+          <input type="text" placeholder="01/10/2020" id="datetime_value" onkeypress="handleClick(event)"/>
           <!-- <button id="filter-btn" type="button" class="btn btn-default"> 
             Filter Table
           </button>-->
         </ul>
         <ul>
           <label id="city" for="text">Enter a City </label></br>
-          <input type="text" placeholder="roswell" id="city_value" />
+          <input type="text" placeholder="roswell" id="city_value" onkeypress="handleClick(event)"/>
         </ul>
         <ul>
           <label id="state" for="text">Enter a State </label></br>
-          <input type="text" placeholder="ca" id="state_value" />
+          <input type="text" placeholder="ca" id="state_value" onkeypress="handleClick(event)"/>
         </ul>
         <ul>
           <label id="country" for="text">Enter a Country </label></br>
-          <input type="text" placeholder="us" id="country_value" />
+          <input type="text" placeholder="us" id="country_value" onkeypress="handleClick(event)"/>
         </ul>
         <ul>
           <label id="shape" for="text">Enter a Shape </label></br>
-          <input type="text" placeholder="state" id="shape_value" />
+          <input type="text" placeholder="light" id="shape_value" onkeypress="handleClick(event)"/>
         </ul>
-
-        <div class="container">
-          <ul>
-            <br>
-            <button id="filter-btn" type="button" class="btn btn-white" onclick="handleClick()">
-              Apply filter(s)
-            </button>
-          </ul>
-        </div>
-
       </form>
     </div>
     <div class="col-md-9">
